@@ -1,0 +1,16 @@
+{
+  "manifest_version": 3,
+  "name": "Front Half Bold",
+  "version": "1.0",
+  "description": "Make the front half of each word bold",
+  "permissions": ["activeTab"],
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"]
+    }
+  ]
+}
