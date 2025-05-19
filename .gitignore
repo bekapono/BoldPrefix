@@ -1,0 +1,21 @@
+# IntelliJ IDEA
+.idea/
+*.iws
+*.iml
+*.ipr
+
+# Windows-specific
+Thumbs.db
+Desktop.ini
+
+# Build/output folders (if you ever add a build step)
+out/
+target/
+build/
+dist/
+
+# Chrome extension packaging artifacts
+*.zip
+
+# Logs
+*.log
