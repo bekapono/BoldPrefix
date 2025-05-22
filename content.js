@@ -1,3 +1,5 @@
+console.log("BoldPrefix mutation start.\n")
+
 // Future Enhancements: if a word only consists of two letters bold whole word.
 function makeFrontHalfBold(text) {
   return text.replace(/\b\w+\b/g, (word) => {
@@ -10,7 +12,7 @@ function makeFrontHalfBold(text) {
 function walk(node) {
   // Checks if node type is TEXT_NODE, and the text is empty
   if (node.nodeType === 3 && node.nodeValue.trim().length !== 0) {
-    console.log('Mutating: ', node)  // remove when program is public
+    //console.log('Mutating: ', node)  // remove when program is public
 
     const wrapper = document.createElement('span');
     wrapper.innerHTML = makeFrontHalfBold(node.nodeValue);
@@ -29,5 +31,4 @@ function walk(node) {
   }
 }
 
-console.log("BoldPrefix mutation start.\n")
 walk(document.body);
