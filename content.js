@@ -1,4 +1,4 @@
-console.log("BoldPrefix mutation start.\n")
+console.log("BoldPrefix mutation start.\n") // Remove when extension goes public
 
 // Future Enhancements: if a word only consists of two letters bold whole word.
 function makeFrontHalfBold(text) {
