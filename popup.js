@@ -1,4 +1,7 @@
+console.log('popup.js loaded');
+
 document.getElementById('makeBold').addEventListener('click', async () => {
+  console.log('makeBold button clicked')
   try {
     const [tab] = await chrome.tabs.query({ active: true, currentWindow: true });
     if (chrome.scripting && chrome.scripting.executeScript) {
@@ -13,6 +16,7 @@ document.getElementById('makeBold').addEventListener('click', async () => {
 });
 
 document.getElementById('revertBold').addEventListener('click', async () => {
+  console.log('revertBold button clicked')
   try {
     const [tab] = await chrome.tabs.query({ active: true, currentWindow: true });
     if (chrome.scripting && chrome.scripting.executeScript) {

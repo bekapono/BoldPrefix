@@ -6,9 +6,13 @@
   <body>
     <div class="button-container">
       <button id="makeBold">Make Front Half Bold</button>
-      <script src="popup.js"></script>
+      <!--
+          This line was causing an issue, and it was redundant. Only need one script src
+          <script src="popup.js"></script>
+      -->
       <button id="revertBold">Revert Bold</button>
-      <script src="popup.js"></script>
     </div>
+    <!-- Needed script src implemented after buttons -->
+    <script src="popup.js"></script>
   </body>
 </html>
