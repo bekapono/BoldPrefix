@@ -1,6 +1,11 @@
 .button-container {
   display: flex;
   gap: 10px;
+  background-color: red;
 }
 
-	
+#makeBold, #revertBold{
+  text-decoration: wavy;
+  color: blue;
+  background-color: yellowgreen;
+}
